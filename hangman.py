@@ -62,6 +62,4 @@ def displayBoard(missedLetters, correctLetters, secretWord):
     print()
 
 def getGuess(alreadyGuessed):
-    {
-
-    }
+    #
