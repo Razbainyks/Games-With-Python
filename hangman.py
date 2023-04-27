@@ -117,10 +117,11 @@ if difficulty == 'H':
 
 missedLetters = ''
 correctLetters = ''
-secretWord = getRandomWord(words)
+secretWord, secretSet = getRandomWord(words)
 gameIsDone = False
 
 while True:
+    print('The secret word is in the set: '+ secretSet)
     displayBoard(missedLetters, correctLetters, secretWord)
 
     # Let the player enter a letter.
@@ -153,6 +154,6 @@ while True:
             missedLetters = ''
             correctLetters = ''
             gameIsDone = False
-            secretWord = getRandomWord(words)
+            secretWord, secretSet = getRandomWord(words)
         else:
             break
